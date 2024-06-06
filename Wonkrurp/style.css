@@ -1,0 +1,1259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-moz-selection {
+    background: #aa8c647e;
+}
+
+::selection {
+    background: #aa8c647e;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #860808;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #860808;
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #E42323;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: whitesmoke;
+    outline: 2px solid whitesmoke !important;
+}
+
+
+/* COULEURS PAGES */
+
+.premiere-page {
+    background: url('images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 640px;
+}
+
+.premiere-page-mid {
+    position: relative;
+    z-index: 1;
+    padding-top: 130px;
+    background: url('images/banniere.jpg');
+    background-position: center;
+}
+
+.deuxieme-page {
+    position: relative;
+    z-index: 1;
+    background: #E9E6E1;
+}
+
+.quatrieme-page {
+    background: #E9E6E1;
+}
+
+.cinquieme-page {
+    background: white;
+}
+
+.sixieme-page {
+    background: #E42323;
+}
+
+.septieme-page {
+    background: #323A45;
+}
+
+/* PREMIERE PAGE */
+
+/* header */
+
+header {
+    z-index: 10;
+    width: 100%;
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin-left: 20px;
+    width: 60px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.header ul li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    margin: 0 auto;
+    background: white;
+    transition: width 0.2s ease-in-out;
+}
+
+.header ul li a:hover::after {
+    width: 100%;
+}
+/* first */
+
+.first {
+    display: block;
+    text-align: center;
+}
+
+.first h1 {
+    font-size: 70px;
+    color: white;
+    margin-top: -100px;
+}
+
+.first img {
+    width: 500px;
+    margin-top: -50px;
+}
+
+.first li {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.first li a {
+    background: #E42323;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.first li a:hover {
+    background: white;
+    color:#E42323;
+    transition: all 0.4s ease;
+}
+
+/*  IMAGES */
+
+#caroussel {
+    position: relative;
+    z-index: 1;
+    width:  100%;
+    height: 500px;
+    overflow: hidden;
+    border: 2px solid #333;
+}
+
+.images {
+    display: flex;
+    margin-top: -300px;
+    animation-duration: 20s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mesImages {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5600px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* DEUXIEME PAGE */
+
+.text-deuxieme h2 {
+    color: #000;
+    letter-spacing: .25em;
+    font-size: 22px;
+    margin-bottom: 2.3em;
+}
+
+.text-deuxieme p {
+    color: #959DA2;
+}
+
+.text-deuxieme {
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/* TROISIEME PAGE */
+
+.troisieme-page h1 {
+    text-align: center;
+    color: #000;
+    letter-spacing: .25em;
+    font-size: 22px;
+    margin-bottom: 2.3em;
+    padding-top: 50px;
+}
+
+/* cards */
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.cards p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.cards h3 {
+    color: #fff;
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+.staff {
+    background-color: #790000;
+    background-image: linear-gradient(225deg, #790000 0%, #e40000 100%);    
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 14px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.intro-icon-large {
+    color: #000;
+    font-size: 32px;
+    margin: 14px 0 0 2px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px 12px;
+}
+
+.full-rp {
+    background-color: #790000;
+    background-image: linear-gradient(225deg, #790000 0%, #e40000 100%);    
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 14px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.fa-pencil {
+    color: #000;
+    font-size: 32px;
+    margin: 14px 0 0 2px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 12px 12px;
+}
+
+.gratuit {
+    background-color: #790000;
+    background-image: linear-gradient(225deg, #790000 0%, #e40000 100%);   
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 14px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.fa-coins {
+    color: #000;
+    font-size: 32px;
+    margin: 14px 0 0 2px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 13px 15px;
+}
+
+/* QUATRIEME PAGE */
+
+.quatrieme-page {
+    padding-bottom: 100px;
+}
+
+.quatrieme-page h3 {
+    color: #000;
+    letter-spacing: .25em;
+    font-size: 22px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.fondateurs {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    padding: 20px 20px;
+    margin-bottom: 35px;
+    border-radius: 50%;
+}
+
+.logo h4 {
+    color: white;
+    position: relative;
+    margin-top: -45px;
+    text-align: center;
+    background: red;
+    border-radius: 6px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.logo h2 {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    margin-bottom: -70px;
+    padding-top: 20px;
+}
+
+.ayznnn {
+    margin-top: 20px;
+    background: #000;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.ayznnn:hover {
+    background-color: #790000;
+    background-image: linear-gradient(225deg, #790000 0%, #e40000 100%);   
+}
+
+.catane img {
+    margin-left: 20px;
+}
+
+.catane {
+    margin-top: 20px;
+    margin-left: 30px;
+    background: #000;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.catane:hover {
+    background-color: #790000;
+    background-image: linear-gradient(225deg, #790000 0%, #e40000 100%);   
+}
+
+.super-admin {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.super-admin h4 {
+    color: white;
+    position: relative;
+    margin-top: -45px;
+    text-align: center;
+    background: red;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 6px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.amiigo {
+    margin-top: 20px;
+    margin-left: 30px;
+    background: #000;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.amiigo:hover {
+    background-color: #790000;
+    background-image: linear-gradient(225deg, #790000 0%, #e40000 100%);   
+}
+
+.karim img {
+    margin-left: 25px;
+}
+
+.karim {
+    margin-top: 20px;
+    margin-left: 30px;
+    background: #000;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.karim:hover {
+    background-color: #790000;
+    background-image: linear-gradient(225deg, #790000 0%, #e40000 100%);   
+}
+
+.nini img {
+    margin-left: 20px;
+}
+
+.nini {
+    margin-top: 20px;
+    margin-left: 30px;
+    background: #000;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.nini:hover {
+    background-color: #790000;
+    background-image: linear-gradient(225deg, #790000 0%, #e40000 100%);   
+}
+
+.dev {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.dev h4 {
+    color: white;
+    position: relative;
+    margin-top: -45px;
+    text-align: center;
+    background: red;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 6px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.tototv img {
+    margin-left: 35px;
+}
+
+.tototv {
+    margin-top: 20px;
+    margin-left: 30px;
+    background: #000;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.tototv:hover {
+    background-color: #790000;
+    background-image: linear-gradient(225deg, #790000 0%, #e40000 100%);   
+}
+
+
+/* CINQUIEME PAGE */
+
+.cinquieme-page h2 {
+    color: #000;
+    font-size: 22px;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.cinquieme-page {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.rejoindre {
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+    background: #E42323;
+    color: white;
+    border-radius: 12px;
+    padding: 20px 20px;
+    font-size: 21px;
+}
+
+.rejoindre:hover {
+    transition: all 0.4s ease;
+    background: black;
+}
+
+/* SIXIEME PAGE */
+
+.sixieme-page {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.sixieme-page p {
+    padding-top: 40px;
+}
+
+.sixieme-page h2 {
+    letter-spacing: .25em;
+    font-size: 22px;
+}
+
+.reseaux {
+    padding-top: 20px;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.fa-discord {
+    margin-right: 10px;
+    color: white;
+    opacity: .2;
+    transition: all .2s ease-out;
+}
+
+.fa-twitter {
+    color: white;
+    opacity: .2;
+    transition: all .2s ease-out;
+}
+
+.fa-discord:hover {
+    color: white;
+    opacity: unset;
+}
+
+.fa-twitter:hover {
+    color: white;
+    opacity: unset;
+}
+
+/* SEPTIEME PAGE */
+
+.septieme-page {
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+/* responsive */
+
+.menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 35px;
+}
+
+@media screen and (min-width: 1900px) {
+
+    .first {
+        padding-top: 150px;
+    }
+
+    .premiere-page {
+        background: url('images/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 955px;
+    }
+}
+
+@media screen and (min-width: 918px) and (max-width: 1899px) {
+    .first {
+        padding-top: 10px;
+    }
+
+    .premiere-page {
+        background: url('images/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 920px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 917px) {
+
+    .first {
+        padding-top: 150px;
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .menu {
+        top: 0;
+        left: 0px;
+        padding-left: 50px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.299);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 105vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .menu.mobile-menu {
+        margin-left: 0;
+    }
+
+    .premiere-page ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .premiere-page ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    .premiere-page ul li a{
+        font-weight: 500;
+        color: black;
+    }
+
+    .premiere-page {
+        background: url('images/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 920px;
+    }
+
+    #caroussel {
+        width:  100%;
+        height: 300px;
+        overflow: hidden;
+        border: 2px solid #333;
+    }
+    
+    .images {
+        display: flex;
+        margin-top: -450px;
+        animation-duration: 20s;
+        animation-name: mesImages;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes mesImages {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-6000px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .text-deuxieme {
+        margin: 0 auto;
+        font-size: 13px;
+    }
+
+    .text-deuxieme h2 {
+        letter-spacing: 0;
+    }
+
+    .troisieme-page h1 {
+        letter-spacing: 0;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .staff {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .full-rp {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .gratuit {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .quatrieme-page h3 {
+        color: #000;
+        letter-spacing: 0;
+    }
+
+    .logo h2 {
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: -70px;
+        padding-left: 200px;
+        padding-top: 80px;
+    }
+    
+
+    .fondateurs {
+        display: block;
+        justify-content: center;
+    }
+
+    .super-admin {
+        display: block;
+    }
+
+    .dev {
+        display: block;
+    }
+
+    .ayznnn {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background: #000;
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .ayznnn:hover {
+        background: #000;
+    }
+
+    .catane:hover {
+        background: #000;
+    }
+
+    .amiigo:hover {
+        background: #000;
+    }
+
+    .karim:hover {
+        background: #000;
+    }
+
+    .nini:hover {
+        background: #000;
+    }
+
+    .tototv:hover {
+        background: #000;
+    }
+
+    .amiigo {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background: #000;
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    header ul li a:hover {
+        letter-spacing: 0px;
+    } 
+}
+
+@media screen and (min-width: 414px) and (max-width: 600px) {
+
+    .header {
+        padding: 0;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .menu {
+        top: 0;
+        left: 0px;
+        padding-left: 0px;
+        position: absolute;
+        background: black;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 105vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .menu.mobile-menu {
+        margin-left: 0;
+    }
+
+    .premiere-page ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .premiere-page ul li {
+        margin: 25px 0;
+        font-size: 1.5em;
+    }
+
+    .premiere-page ul li a{
+        font-weight: 500;
+        color: white;
+    }
+
+    .premiere-page header ul li a {
+        margin: 0 auto;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .first {
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+
+    .first img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .premiere-page {
+        background: url('images/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 920px;
+    }
+
+    #caroussel {
+        width:  100%;
+        height: 300px;
+        overflow: hidden;
+        border: 2px solid #333;
+    }
+    
+    .images {
+        display: flex;
+        margin-top: -450px;
+        animation-duration: 20s;
+        animation-name: mesImages;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes mesImages {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-6300px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .text-deuxieme {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+    .text-deuxieme h2 {
+        letter-spacing: 0;
+    }
+
+    .troisieme-page h1 {
+        font-size: 20px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        letter-spacing: 0;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .staff {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .full-rp {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .gratuit {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .quatrieme-page h3 {
+        color: #000;
+        letter-spacing: 0;
+    }
+
+    .logo h2 {
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        font-size: 40px;
+        margin: 0 auto;
+        padding-left: 170px;
+        padding-top: 95px; 
+    }
+    
+
+    .fondateurs {
+        display: block;
+        justify-content: center;
+    }
+
+    .super-admin {
+        display: block;
+    }
+
+    .dev {
+        display: block;
+    }
+
+    .ayznnn {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background: #000;
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .ayznnn:hover {
+        background: #000;
+    }
+
+    .catane:hover {
+        background: #000;
+    }
+
+    .amiigo:hover {
+        background: #000;
+    }
+
+    .karim:hover {
+        background: #000;
+    }
+
+    .nini:hover {
+        background: #000;
+    }
+
+    .tototv:hover {
+        background: #000;
+    }
+
+    .amiigo {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background: #000;
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .cinquieme-page h2 {
+        margin: 0 auto;
+    }
+
+    .sixieme-page p {
+        font-size: 15px;
+        margin: 0 auto;
+    }
+
+    .reseaux {
+        margin-right: 10px;
+    }
+
+    header ul li a:hover {
+        letter-spacing: 0px;
+    } 
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 414px) {
+
+    .header {
+        padding: 0;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .menu {
+        top: 0;
+        left: 0px;
+        padding-left: 10px;
+        position: absolute;
+        background: black;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 105vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .menu.mobile-menu {
+        margin-left: 0;
+    }
+
+    .premiere-page ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .premiere-page ul li {
+        margin: 25px 0;
+        font-size: 1.5em;
+    }
+
+    .premiere-page ul li a{
+        font-weight: 500;
+        color: white;
+    }
+
+    .premiere-page header ul li a {
+        margin: 0 auto;
+        margin-left: 10px;
+        font-size: 11px;
+    }
+
+    .first {
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+
+    .first img {
+        width: 100%;
+    }
+
+    .premiere-page {
+        background: url('images/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 920px;
+    }
+
+    #caroussel {
+        width:  100%;
+        height: 300px;
+        overflow: hidden;
+        border: 2px solid #333;
+    }
+    
+    .images {
+        display: flex;
+        margin-top: -450px;
+        animation-duration: 20s;
+        animation-name: mesImages;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes mesImages {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-6400px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .text-deuxieme {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+    .text-deuxieme h2 {
+        letter-spacing: 0;
+    }
+
+    .troisieme-page h1 {
+        font-size: 20px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        letter-spacing: 0;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .staff {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .full-rp {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .gratuit {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .quatrieme-page h3 {
+        color: #000;
+        letter-spacing: 0;
+    }
+
+    .logo h2 {
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        font-size: 20px;
+        margin: 0 auto;
+        padding-left: 170px;
+        padding-top: 95px; 
+    }
+
+    .logo img {
+        width: 130px;
+    }
+    
+
+    .fondateurs {
+        display: block;
+        justify-content: center;
+    }
+
+    .super-admin {
+        display: block;
+    }
+
+    .dev {
+        display: block;
+    }
+
+    .ayznnn {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background: #000;
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .ayznnn:hover {
+        background: #000;
+    }
+
+    .catane:hover {
+        background: #000;
+    }
+
+    .amiigo:hover {
+        background: #000;
+    }
+
+    .karim:hover {
+        background: #000;
+    }
+
+    .nini:hover {
+        background: #000;
+    }
+
+    .tototv:hover {
+        background: #000;
+    }
+
+    .amiigo {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background: #000;
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .cinquieme-page h2 {
+        margin: 0 auto;
+    }
+
+    .sixieme-page p {
+        font-size: 15px;
+        margin: 0 auto;
+    }
+
+    .reseaux {
+        margin-right: 10px;
+    }
+
+    header ul li a:hover {
+        letter-spacing: 0px;
+    } 
+
+}
